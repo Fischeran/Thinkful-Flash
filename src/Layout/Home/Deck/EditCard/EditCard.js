@@ -67,7 +67,7 @@ function EditCard() {
         const updatedCard = {...card, front: formData.front, back: formData.back}
        
         await updateCard(updatedCard, abortController.signal);
-        history.go(0);
+        history.push(`/decks/${deckId}`);
 
        }
 
