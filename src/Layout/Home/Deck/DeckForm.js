@@ -22,11 +22,12 @@ function DeckForm({ deckId, submitHandler, formData, changeHandler }) {
             <div className="row col-4">
                 <textarea id="description" className="form-control" name="description" value={formData.description} onChange={(event) => changeHandler(event)} required />
             </div>
+            <div className="row p-2 col-4 btn-toolbar" style={{}} >
+            {deckId ? <Link to={`/decks/${deckId}`} className="btn btn-secondary p-2">Cancel</Link> : <Link to={`/`} className="btn btn-secondary p-2">Cancel</Link>}
 
-            {deckId ? <Link to={`/decks/${deckId}`} className="btn btn-secondary">Cancel</Link> : <Link to={`/`} className="btn btn-secondary">Cancel</Link>}
 
-
-                <button type="submit"  className="btn btn-primary">Submit</button>
+                <button type="submit"  className="btn btn-primary p-2">Submit</button>
+            </div> 
             </form>
 
     )
