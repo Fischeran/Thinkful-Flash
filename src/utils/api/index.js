@@ -2,7 +2,7 @@
  * Defines the base URL for the API.
  * The default values is overridden by the `API_BASE_URL` environment variable.
  */
-const API_BASE_URL = "https://thinkful-flash-server2314.herokuapp.com" || "http://localhost:8080";
+const API_BASE_URL = "https://flashcard-server-wcp7.onrender.com/" || "http://localhost:8080";
 
 /**
  * Defines the default headers for these functions to work with `json-server`
